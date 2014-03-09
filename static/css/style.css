@@ -56,3 +56,25 @@ header h5.subtle {
 footer {
     text-align: center;
 }
+
+header .line-center {
+    margin: 0;
+    padding: 0 10px;
+    background: #fff;
+    display: inline-block;
+}
+
+header .over-text {
+    position: relative;
+    z-index: 2;
+}
+
+header .over-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: solid 1px #ddd;
+    z-index: -1;
+}

@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 {% block iris_body %}
-<section id="article_index" class="offset-by-one fourteen columns">
+<section id="article_index" class="sixteen columns clearfix">
     {% if articles %}
     {% for article in (articles_page.object_list if articles_page else articles) %}
-    <section>
+    <section class="sixteen columns clearfix">
         {% include "article_header.html" %}
         <br>
-        <section class="content">
-        {{ article.content }}
+        <section class="offset-by-one fourteen columns clearfix">
+            {{ article.content }}
+            <br>
         </section>
     </section>
-    <br><br>
     {% endfor %}
     {% endif %}
 </section>
-<div class="one column"></div>
 {% endblock %}

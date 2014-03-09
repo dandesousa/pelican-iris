@@ -1,15 +1,13 @@
 {% extends "base.html" %}
 {% block iris_body %}
-<section id="page" class="offset-by-one fourteen columns">
+<section id="page" class="sixteen columns clearfix">
+    <hr>
     {% if page %}
-    <section>
-        {% include "page_header.html" %}
-        <br>
-        <section class="content">
-        {{ page.content }}
-        </section>
+    {% include "page_header.html" %}
+    <br>
+    <section class="content offset-by-one fourteen columns">
+    {{ page.content }}
     </section>
-    <br><br>
     {% endif %}
 </section>
 {% endblock %}

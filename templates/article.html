@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block iris_body %}
+<article id="article" class="offset-by-one fourteen columns">
+    {% if article %}
+    <article>
+        {% include "article_header.html" %}
+        <br>
+        <article class="content">
+        {{ article.content }}
+        </article>
+    </article>
+    <br><br>
+    {% endif %}
+</article>
+{% endblock %}
