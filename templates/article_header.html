@@ -1,0 +1,7 @@
+<header>
+    <h5 class="subtle">{{ article.locale_date }}</h5>
+    <br>
+    <h3>{% if IRIS_DISABLE_ARTICLE_LINKS %}{{ article.title }}{% else %}<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>{% endif %}</h3>
+    <h5><small>by </small>{% if IRIS_DISABLE_AUTHOR_LINKS %}{{ article.author }}{% else %}<a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}</h5>
+</header>
+

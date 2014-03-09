@@ -1,0 +1,58 @@
+/*
+* Iros v0.1
+* Copyright 2014, Daniel DeSousa
+* github.com/dandesousa/pelican-iris
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 03/09/2014
+*/
+
+.subtle {
+    color: #A4A4A4;
+}
+
+#nav ul {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#nav ul li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #A4A4A4;
+}
+
+#nav a:hover {
+    color: #585858;
+}
+
+#nav a.active,
+#nav a.active:hover {
+    color: #000;
+}
+
+header {
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header h5.subtle {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+}

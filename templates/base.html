@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="author" content="{{ AUTHOR }}">
+
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/layout.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+        <title>{% block iris_windowtitle %}{{ SITENAME }}{% endblock %}</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <!-- nav bar -->
+            <nav id="nav" class="sixteen columns">
+                <ul>
+                    <li><a {% if page_name == "index" %}class="active" {% endif %}href="{{ SITEURL }}/">Blog</a></li>
+                    {% for p in pages %}
+                    <li><a {% if page == p %}class="active" {% endif %}href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                <hr>
+            </nav>
+
+            <!-- body -->
+            {% block iris_body %}
+            <div class="sixteen columns">
+                You aren't doing your job, this should be implemented
+            </div>
+            {% endblock %}
+
+            <!-- footer -->
+            <footer id="footer" class="sixteen columns">
+                <hr>
+                <!-- insert footer content here -->
+                <p>&copy; {{ AUTHOR }}, 2014. <a href="https://github.com/dandesousa/pelican-iris">Iris</a> by <a href="http://dandesousa.com">Dan DeSousa</a>.</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
