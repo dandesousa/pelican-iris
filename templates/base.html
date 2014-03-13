@@ -8,8 +8,17 @@
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/layout.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+        {% if IRIS_FAV_ICON %}
+        <link href="{{ SITEURL }}/{{ IRIS_FAV_ICON }}" rel="icon" type="image/x-icon" >
+        {% endif %}
+        {% if IRIS_IOS_ICON_PREFIX %}
+        <link href="{{ SITEURL }}/{{ IRIS_IOS_ICON_PREFIX }}-57x57.png" rel=”apple-touch-icon{% if IRIS_IOS_ICON_PRECOMPOSED %}-precomposed{% endif %}” >
+        <link href="{{ SITEURL }}/{{ IRIS_IOS_ICON_PREFIX }}-72x72.png" sizes="72x72" rel=”apple-touch-icon{% if IRIS_IOS_ICON_PRECOMPOSED %}-precomposed{% endif %}” >
+        <link href="{{ SITEURL }}/{{ IRIS_IOS_ICON_PREFIX }}-114x114.png" sizes="114x114" rel=”apple-touch-icon{% if IRIS_IOS_ICON_PRECOMPOSED %}-precomposed{% endif %}” >
+        <link href="{{ SITEURL }}/{{ IRIS_IOS_ICON_PREFIX }}-120x120.png" sizes="120x120" rel=”apple-touch-icon{% if IRIS_IOS_ICON_PRECOMPOSED %}-precomposed{% endif %}” >
+        <link href="{{ SITEURL }}/{{ IRIS_IOS_ICON_PREFIX }}-152x152.png" sizes="152x152" rel=”apple-touch-icon{% if IRIS_IOS_ICON_PRECOMPOSED %}-precomposed{% endif %}” >
+        {% endif %}
         <title>{% block iris_windowtitle %}{{ SITENAME }}{% endblock %}</title>
-
     </head>
     <body>
         <div class="container">
