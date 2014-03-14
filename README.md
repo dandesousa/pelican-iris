@@ -5,7 +5,7 @@ Minimalist pelican theme for readability and photo blogs.
 
 This theme is under active development and may change substantially.
 
-## Features and Screenshot
+## Features
 
 Iris supports a number of features, including:
 
@@ -14,13 +14,17 @@ Iris supports a number of features, including:
 - Freely distributable and modifiable worldwide.
 - More features being adding regularly!
 
+## Screenshot(s)
+
+![](screenshot.png)
+
 ## Template Variables
 
 The following template variables exist, and can be used to manipulate the look and feel of the template:
 
 | Variable | Options | Description | Examples |
 | -------- | ------- | ----------- | -------- |
-| IRIS_HIDE_COPYRIGHT | True, False | If true, hides the public domain notice at the bottom of the page. | IRIS_HIDE_COPYRIGHT = True |
+| IRIS_HIDE_COPYRIGHT | True, False | If true, hides the public domain notice at the bottom of each page. | IRIS_HIDE_COPYRIGHT = True |
 | IRIS_FAV_ICON | any text | Set to the path on your page to the favicon.ico file to site for your site. This should also be set in your STATIC_PATHS list in pelicanconf.py. | IRIS_FAV_ICON = 'favicon.ico' |
 | IRIS_IOS_ICON_PREFIX | any text | Set to the base path of your apple-touch-icons for you site. This will enable iOS touch icons for book marks on all iOS platforms if you specify files of the following format: {{ IRIS_IOS_ICON_PREFIX }}-57x57.png. Repeat for sizes 57, 72, 114, 120, 152 to enable support on all iOS platforms. These images should also be set in your STATIC_PATHS list in pelicanconf.py | IRIS_IOS_ICON_PREFIX = 'apple-touch-icon' |
 | IRIS_IOS_ICON_PRECOMPOSED | True, False | Set to True if you want your icons to be precomposed, or without extra styling applied on those platforms that support additional styling. | IRIS_IOS_ICON_PRECOMPOSED = True |
