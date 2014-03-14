@@ -16,6 +16,8 @@ Iris supports a number of features, including:
 
 ## Screenshot(s)
 
+Or see it in action ![at my blog](dandesousa.com)
+
 ![](screenshot.png)
 
 ## Template Variables
