@@ -43,7 +43,12 @@
             <footer id="footer" class="sixteen columns">
                 <hr>
                 <!-- insert footer content here -->
-                <p>&copy; {{ AUTHOR }}, 2014. <a href="https://github.com/dandesousa/pelican-iris">Iris</a> by <a href="http://dandesousa.com">Daniel DeSousa</a>.</p>
+                <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dandesousa.com">Daniel DeSousa</a> in 2014.</p>
+                {% if not IRIS_HIDE_COPYRIGHT %}
+                <div class="offset-by-four eight columns clearfix">
+                {% include "copyright.html" %}
+                </div>
+                {% endif %}
             </footer>
         </div>
 
