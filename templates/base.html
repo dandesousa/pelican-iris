@@ -70,13 +70,13 @@
         {% if not IRIS_DISABLE_GALLERIA %}
         <script>
             if ( $(".galleria").length > 0 ) {
-            Galleria.loadTheme('{{ SITEURL }}/theme/js/galleria/themes/classic/galleria.classic.min.js');
-            Galleria.run('.galleria', {
-                debug: false,
-                height: 0.5625,
-                lightbox: true
-            });
-        }
+                Galleria.loadTheme('{{ SITEURL }}/theme/js/galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria', {
+                    debug: false,
+                    height: 0.5625,
+                    lightbox: true
+                });
+            }
         </script>
         {% endif %}
         {% include "google_analytics.html" %}
