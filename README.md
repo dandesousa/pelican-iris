@@ -33,7 +33,7 @@ The following template variables exist, and can be used to manipulate the look a
 | IRIS_IOS_ICON_PRECOMPOSED | True, False | Set to True if you want your icons to be precomposed, or without extra styling applied on those platforms that support additional styling. | IRIS_IOS_ICON_PRECOMPOSED = True |
 | IRIS_DISABLE_ARTICLE_LINKS | True, False | Set to True if you want to create a tumbler style blog with no article specific links crawlable from the main site | IRIS_DISABLE_ARTICLE_LINKS = True |
 | IRIS_DISABLE_AUTHOR_LINKS | True, False | Set to True if you want to disable links to the author page | IRIS_DISABLE_AUTHOR_LINKS = False |
-| IRIS_DISABLE_GALLERIA | True, False | If true, stops gallaria javascript from loading in the browser. Useful it want to disable photo galleries and save some load times | IRIS_DISABLE_GALLARIA = True |
+| IRIS_DISABLE_GALLERIA | True, False | If true, stops gallaria javascript from loading in the browser. Useful it want to disable photo galleries and save some load times | IRIS_DISABLE_GALLERIA = True |
 | GOOGLE_ANALYTICS | google analytics id | Set this to your google analytics id for google analytics tracking | GOOGLE_ANALYTICS = 'UA-XXXXXXX-X' |
 
 ## License
