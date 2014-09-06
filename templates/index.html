@@ -1,38 +1,38 @@
 {% extends "base.html" %}
 {% block iris_body %}
-<section id="article_index" class="sixteen columns clearfix">
-    {% if articles %}
-    {% for article in (articles_page.object_list if articles_page else articles) %}
-    <section class="sixteen columns clearfix">
-        {% include "article_header.html" %}
-        <br>
-        <section class="offset-by-one fourteen columns clearfix">
-            {{ article.content }}
-            <br>
-        </section>
-    </section>
-    {% endfor %}
-    {% endif %}
+{% if articles %}
+{% for article in (articles_page.object_list if articles_page else articles) %}
 
-    {% if articles_page and articles_paginator.num_pages > 1 %}
-    <section class="sixteen columns clearfix">
-        <div class="two columns clearfix">
-        {% if articles_page.has_previous() %}
-        {% set num = articles_page.previous_page_number() %}
-            <a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">&larr; Previous</a>
-        {% else %}
-        &larr; Previous
-        {% endif %}
-        </div>
-
-        <div class="offset-by-eleven two columns clearfix" style="text-align:right">
-        {% if articles_page.has_next() %}
-            <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &rarr;</a>
-        {% else %}
-            Next &rarr;
-        {% endif %}
-        </div>
-    </section>
-    {% endif %}
+<section class="sixteen columns clearfix">
+{% include "article_header.html" %}
 </section>
+
+<section class="offset-by-one fourteen columns clearfix">
+    <br>
+    {{ article.content }}
+    <br>
+</section>
+{% endfor %}
+{% endif %}
+
+{% if articles_page and articles_paginator.num_pages > 1 %}
+<section class="sixteen columns clearfix">
+    <div class="two columns clearfix">
+    {% if articles_page.has_previous() %}
+    {% set num = articles_page.previous_page_number() %}
+        <a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">&larr; Previous</a>
+    {% else %}
+    &larr; Previous
+    {% endif %}
+    </div>
+
+    <div class="offset-by-eleven two columns clearfix" style="text-align:right">
+    {% if articles_page.has_next() %}
+        <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &rarr;</a>
+    {% else %}
+        Next &rarr;
+    {% endif %}
+    </div>
+</section>
+{% endif %}
 {% endblock %}

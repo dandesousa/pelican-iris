@@ -49,6 +49,10 @@ header a:hover {
     text-decoration: underline;
 }
 
+header h3.subtle {
+    font-style: italic;
+}
+
 header h5.subtle {
     font-style: italic;
 }
