@@ -31,7 +31,7 @@
             <!-- nav bar -->
             <nav id="nav" class="sixteen columns">
                 <ul>
-                    <li><a {% if page_name == "index" or article %}class="active" {% endif %}href="{{ SITEURL }}/">Blog</a></li>
+                    <li><a {% if page_name == "index" or article or category %}class="active" {% endif %}href="{{ SITEURL }}/">Blog</a></li>
                     {% for p in pages %}
                     <li><a {% if page == p %}class="active" {% endif %}href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                     {% endfor %}

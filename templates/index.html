@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 {% block iris_body %}
+
+<section class="sixteen columns clearfix">
+    <header>
+        <h5 class="subtle"><span class="line-center">Photography</span></h5>
+        <br>
+    </header>
+</section>
+
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
-
 <section class="sixteen columns clearfix">
 {% include "article_header.html" %}
 </section>
