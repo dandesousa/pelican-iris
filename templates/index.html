@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block iris_body %}
 
+{% if category %}
 <section class="sixteen columns clearfix">
     <header>
-        <h5 class="subtle"><span class="line-center">Photography</span></h5>
+        <h5 class="subtle"><span class="line-center">{{ category }}</span></h5>
         <br>
     </header>
 </section>
+{% endif %}
 
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
