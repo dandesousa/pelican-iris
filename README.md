@@ -9,10 +9,11 @@ This theme is under active development and may change substantially.
 
 Iris supports a number of features, including:
 
-- Google Analytics tracking.
+- Google Analytics.
 - Favicon and Apple Touch Icon support.
 - Beautiful javascript driven photo galleries with Galleria.
-- Freely distributable and modifiable worldwide.
+- Public domain -- free of all restrictions and modifiable worldwide.
+- Category pages
 - More features being adding regularly!
 
 ## Screenshot(s)
