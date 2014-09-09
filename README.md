@@ -17,7 +17,7 @@ Iris supports a number of features, including:
 
 ## Screenshot(s)
 
-Or see it in action [at my blog](http://dandesousa.com)
+Or see it in action [at my blog](http://dan.desousa.cc)
 
 ![](screenshot.png)
 
