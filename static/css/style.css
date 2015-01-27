@@ -7,6 +7,32 @@
 * 03/09/2014
 */
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+small {
+    font-family: 'Josefin Slab', serif; !important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 > a {
+    font-weight: 600;
+}
+
+
+section {
+    font-size: 1.2em;
+}
+
 .subtle {
     color: #A4A4A4;
 }
@@ -24,7 +50,7 @@
 
 #nav a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #A4A4A4;
 }
 

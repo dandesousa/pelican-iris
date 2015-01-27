@@ -2,7 +2,7 @@
 <h5 class="subtle over-text"><span class="line-center">{{ article.locale_date }}</span></h5>
     <br>
     <h3>{% if IRIS_DISABLE_ARTICLE_LINKS %}{{ article.title }}{% else %}<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>{% endif %}</h3>
-    <h5><small>by </small>{% if IRIS_DISABLE_AUTHOR_LINKS %}{{ article.author }}{% else %}<a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}</h5>
+    <h6><small>by </small>{% if IRIS_DISABLE_AUTHOR_LINKS %}{{ article.author }}{% else %}<a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}</h6>
     {% if article.category.name.strip() %}
     <h6><small>in </small>{% if IRIS_DISABLE_CATEGORY_LINKS %}{{ article.category }}{% else %}<a href="{{ SITEURL}}/{{ article.category.url }}">{{article.category}}</a>{% endif %}</h6>
     {% endif %}
