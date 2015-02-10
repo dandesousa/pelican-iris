@@ -6,6 +6,12 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 03/09/2014
 */
+/*	Blockquotes  */
+	blockquote, blockquote p { line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 
 a {
     text-decoration: none;
