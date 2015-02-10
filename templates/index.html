@@ -2,7 +2,7 @@
 {% block iris_body %}
 
 {% if category %}
-<section class="sixteen columns clearfix">
+<section class="twelve columns clearfix">
     <header>
         <h5 class="subtle"><span class="line-center"><a href="{{ SITE_URL }}/">Blog</a> / {{ category }}</span></h5>
         <br>
@@ -12,20 +12,24 @@
 
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
-<section class="sixteen columns clearfix">
+<section class="row">
 {% include "article_header.html" %}
 </section>
 
-<section class="offset-by-one fourteen columns clearfix">
+<section class="row">
     <br>
     {{ article.content }}
     <br>
+</section>
+
+<section class="row">
+{% include "article_footer.html" %}
 </section>
 {% endfor %}
 {% endif %}
 
 {% if articles_page and articles_paginator.num_pages > 1 %}
-<section class="sixteen columns clearfix">
+<section class="twelve columns clearfix">
     <div class="two columns clearfix">
     {% if articles_page.has_previous() %}
     {% set num = articles_page.previous_page_number() %}
@@ -35,7 +39,7 @@
     {% endif %}
     </div>
 
-    <div class="offset-by-eleven two columns clearfix" style="text-align:right">
+    <div class="offset-by-seven two columns clearfix" style="text-align:right">
     {% if articles_page.has_next() %}
         <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &rarr;</a>
     {% else %}

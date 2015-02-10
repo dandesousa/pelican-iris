@@ -4,10 +4,10 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="author" content="{{ AUTHOR }}">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/layout.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
         {% if IRIS_FAV_ICON %}
         <link href="{{ SITEURL }}/{{ IRIS_FAV_ICON }}" rel="icon" type="image/x-icon" >
@@ -30,24 +30,27 @@
     <body>
         <div class="container">
             <!-- nav bar -->
-            <nav id="nav" class="sixteen columns">
+            <nav id="nav" class="row">
+            <div class="twelve columns">
                 <ul>
                     <li><a {% if page_name == "index" or article or category %}class="active" {% endif %}href="{{ SITEURL }}/">Blog</a></li>
                     {% for p in pages %}
                     <li><a {% if page == p %}class="active" {% endif %}href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                     {% endfor %}
                 </ul>
+                </div>
             </nav>
 
             <!-- body -->
             {% block iris_body %}
-            <div class="sixteen columns">
+            <div class="row">
                 You aren't doing your job, this should be implemented
             </div>
             {% endblock %}
 
             <!-- footer -->
-            <footer id="footer" class="sixteen columns">
+            <footer id="footer" class="row">
+            <div class="twelve columns">
                 <hr>
                 <!-- insert footer content here -->
                 <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dandesousa.com">Daniel DeSousa</a> in 2014.</p>
@@ -59,10 +62,11 @@
                 </ul>
                 </div>
                 {% if not IRIS_HIDE_COPYRIGHT %}
-                <div class="offset-by-four eight columns clearfix">
+                <div class=" clearfix">
                 {% include "copyright.html" %}
                 </div>
                 {% endif %}
+            </div>
             </footer>
         </div>
 

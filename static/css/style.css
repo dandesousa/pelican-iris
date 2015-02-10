@@ -7,40 +7,6 @@
 * 03/09/2014
 */
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-small {
-    font-family: 'Open Sans'; !important
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-nav > ul > li > a
-{
-    font-weight: 300;
-}
-
-h6 > a,
-a {
-    text-decoration: none;
-    font-weight: 600;
-}
-
-
-section {
-    font-size: 1.0em;
-    font-weight: 300;
-}
-
 .subtle {
     color: #A4A4A4;
 }

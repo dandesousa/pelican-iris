@@ -1,0 +1,10 @@
+<div class="twelve columns">
+<small>by </small>{% if IRIS_DISABLE_AUTHOR_LINKS %}{{ article.author }}{% else %}<a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}
+{% if article.category.name.strip() %}
+<small> in </small>{% if IRIS_DISABLE_CATEGORY_LINKS %}{{ article.category }}{% else %}<a href="{{ SITEURL}}/{{ article.category.url }}">{{article.category}}</a>{% endif %}
+{% endif %}
+</div>
+<div class="twelve columns">
+    {% for tag in article.tags %}{{tag}}{% if not loop.last %},{% endif %} {% endfor %}
+</div>
+<div class="u-cf"></div>
