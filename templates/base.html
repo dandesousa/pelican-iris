@@ -31,14 +31,14 @@
         <div class="container">
             <!-- nav bar -->
             <nav id="nav" class="row">
-            <div class="twelve columns">
+            <div class="one columns">
                 <ul>
                     <li><a {% if page_name == "index" or article or category %}class="active" {% endif %}href="{{ SITEURL }}/">Blog</a></li>
                     {% for p in pages %}
                     <li><a {% if page == p %}class="active" {% endif %}href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                     {% endfor %}
                 </ul>
-                </div>
+            </div>
             </nav>
 
             <!-- body -->
@@ -51,22 +51,22 @@
             <!-- footer -->
             <footer id="footer">
             <div class="row">
-            <div class="twelve columns">
-                <hr>
-                <!-- insert footer content here -->
-                <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dan.desousa.cc">Daniel DeSousa</a> in 2014.</p>
+                <div class="twelve column">
+                    <hr>
+                    <!-- insert footer content here -->
+                    <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dan.desousa.cc">Daniel DeSousa</a> in 2014.</p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            {% if not IRIS_HIDE_COPYRIGHT %}
-            {% include "copyright.html" %}
-            {% endif %}
-        </div>
-        <div class="row">
-            This work was made possible by:
-            <div><a href="http://www.getskeleton.com/">Skeleton</a></div>
-            {% if not IRIS_DISABLE_GALLERIA %}<div><a href="http://galleria.io/">Galleria</a></div>{% endif %}
-        </div>
+            <div class="row">
+                {% if not IRIS_HIDE_COPYRIGHT %}
+                {% include "copyright.html" %}
+                {% endif %}
+            </div>
+            <div class="row">
+                This work was made possible by:
+                <div><a href="http://www.getskeleton.com/">Skeleton</a></div>
+                {% if not IRIS_DISABLE_GALLERIA %}<div><a href="http://galleria.io/">Galleria</a></div>{% endif %}
+            </div>
             </footer>
         </div>
 
