@@ -49,27 +49,26 @@
             {% endblock %}
 
             <!-- footer -->
-            <footer id="footer" class="row">
+            <footer id="footer">
+            <div class="row">
             <div class="twelve columns">
                 <hr>
                 <!-- insert footer content here -->
-                <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dandesousa.com">Daniel DeSousa</a> in 2014.</p>
-                <div>
-                This work was made possible by:
-                <ul>
-                    <li><a href="http://www.getskeleton.com/">Skeleton</a></li>
-                    {% if not IRIS_DISABLE_GALLERIA %}<li><a href="http://galleria.io/">Galleria</a></li>{% endif %}
-                </ul>
-                </div>
-                {% if not IRIS_HIDE_COPYRIGHT %}
-                <div class=" clearfix">
-                {% include "copyright.html" %}
-                </div>
-                {% endif %}
+                <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dan.desousa.cc">Daniel DeSousa</a> in 2014.</p>
             </div>
+        </div>
+        <div class="row">
+            {% if not IRIS_HIDE_COPYRIGHT %}
+            {% include "copyright.html" %}
+            {% endif %}
+        </div>
+        <div class="row">
+            This work was made possible by:
+            <div><a href="http://www.getskeleton.com/">Skeleton</a></div>
+            {% if not IRIS_DISABLE_GALLERIA %}<div><a href="http://galleria.io/">Galleria</a></div>{% endif %}
+        </div>
             </footer>
         </div>
-
 
         <!-- javascript -->
         {% if not IRIS_DISABLE_GALLERIA %}

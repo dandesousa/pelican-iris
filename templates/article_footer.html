@@ -5,6 +5,5 @@
 {% endif %}
 </div>
 <div class="twelve columns">
-    {% for tag in article.tags %}{{tag}}{% if not loop.last %},{% endif %} {% endfor %}
+    {% for tag in article.tags %}<a href="{{SITEURL}}/{{tag.url}}">{{tag}}</a>{% if not loop.last %},{% endif %} {% endfor %}
 </div>
-<div class="u-cf"></div>

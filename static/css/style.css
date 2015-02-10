@@ -7,6 +7,10 @@
 * 03/09/2014
 */
 
+a {
+    text-decoration: none;
+}
+
 .subtle {
     color: #A4A4A4;
 }
