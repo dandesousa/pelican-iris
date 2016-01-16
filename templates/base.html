@@ -6,9 +6,10 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         {% if IRIS_FAV_ICON %}
         <link href="{{ SITEURL }}/{{ IRIS_FAV_ICON }}" rel="icon" type="image/x-icon" >
         {% endif %}
@@ -23,10 +24,10 @@
         <link href="{{ SITEURL }}/{{ IRIS_IOS_ICON_PREFIX }}-152x152.png" sizes="152x152" rel=”apple-touch-icon{% if IRIS_IOS_ICON_PRECOMPOSED %}-precomposed{% endif %}” >
         {% endif %}
         <!-- javascript loads after all other scripts -->
-        <script src="{{ SITEURL }}/theme/js/jquery-1.11.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         {% if not IRIS_DISABLE_GALLERIA %}
-        <script src="{{ SITEURL }}/theme/js/galleria/galleria-1.3.5.min.js"></script>
-        <script src="{{ SITEURL }}/theme/js/galleria/plugins/history/galleria.history.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.3.5/galleria.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/plugins/history/galleria.history.min.js"></script>
         {% endif %}
         <title>{% block iris_windowtitle %}{{ SITENAME }}{% endblock %}</title>
     </head>
