@@ -58,7 +58,6 @@
                 <div class="twelve column">
                     <hr>
                     <!-- insert footer content here -->
-                    <p><a href="https://github.com/dandesousa/pelican-iris">Iris</a>, Created by <a href="http://dan.desousa.cc">Daniel DeSousa</a> in 2014.</p>
                 </div>
             </div>
             <div class="row">
@@ -67,9 +66,11 @@
                 {% endif %}
             </div>
             <div class="row">
+                {% if not IRIS_HIDE_CREDITS %}
                 This work was made possible by:
                 <div><a href="http://www.getskeleton.com/">Skeleton</a></div>
                 {% if not IRIS_DISABLE_GALLERIA %}<div><a href="http://galleria.io/">Galleria</a></div>{% endif %}
+                {% endif %}
             </div>
             </footer>
         </div>
